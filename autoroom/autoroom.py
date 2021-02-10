@@ -291,6 +291,7 @@ class AutoRoom(Commands, commands.Cog, metaclass=CompositeMetaClass):
                         category=dest_category,
                         reason="AutoRoom: New AutoRoom needed.",
                         overwrites=overwrites,
+                        position=5,
                         **options,
                     )
                     await member.move_to(
