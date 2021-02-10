@@ -262,7 +262,8 @@ class AutoRoom(Commands, commands.Cog, metaclass=CompositeMetaClass):
                         member: discord.PermissionOverwrite(
                             view_channel=True,
                             connect=True,
-                            manage_channels=True,
+                            # Don't allow room creator to manage the channel.
+                            # manage_channels=True,
                         )
                     }
                     overwrites.update(common_overwrites)
